@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Política de privacidad · Grabadora Forense</title>
+<title>Política de privacidad · Grabadora con Sello de Tiempo</title>
 <style>
 :root{--bg:#fbfbfc;--fg:#1a1c22;--fg2:#4a4d59;--line:#e0e0e7;--acc:#2f3a8f;--card:#fff}
 @media(prefers-color-scheme:dark){:root{--bg:#14151a;--fg:#e9e9f0;--fg2:#b0b2be;--line:#2e3038;--acc:#96a0f0;--card:#1c1e25}}
@@ -30,26 +30,55 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-si
 <body>
 <div class="w">
 <h1>Política de privacidad</h1>
-<p class="sub"><strong>Grabadora Forense</strong> — <code>com.forense.grabadora</code></p>
-<p class="sub">Graba audio y genera un informe de integridad con hora, ubicación y huella SHA-256.</p>
+<p class="sub"><strong>Grabadora con Sello de Tiempo</strong> — <code>com.liquidsun.grabadora</code></p>
+<p class="sub">Graba audio y genera un acta de integridad con hora, ubicación, huella SHA-256 y sello de tiempo.</p>
 <p class="meta">Editor: Liquid Sun · Responsable del tratamiento: Juan Antonio Hernández López<br>Contacto:
-<a href="mailto:liquidsun.dev@gmail.com">liquidsun.dev@gmail.com</a> · Última actualización: 8 de septiembre de 2026</p>
+<a href="mailto:liquidsun.dev@gmail.com">liquidsun.dev@gmail.com</a> · Última actualización: 11 de octubre de 2026</p>
 
 <h2>Resumen en tres frases</h2>
 <div class="box">
-<p>Las grabaciones, la transcripción y los informes <strong>se quedan en tu teléfono</strong>. No hay
-cuenta de usuario, no hay servidor propio y no se sube ningún audio a ninguna parte.</p>
-<p>Lo único que sale del dispositivo es lo que exige la publicidad, y solo si tú lo autorizas.</p>
+<p>Las grabaciones, las transcripciones y las actas <strong>se quedan en tu teléfono</strong>. No hay
+cuenta de usuario, no hay servidor propio y la app no sube ningún audio a ninguna parte.</p>
+<p>Para sellar cada grabación se envía a una autoridad de sellado <strong>solo su huella
+SHA-256</strong>, de la que no se puede obtener nada del contenido.</p>
+<p>Lo demás que sale del dispositivo es la publicidad (con tu consentimiento) y, solo si tú
+la activas, la transcripción en directo del reconocedor de voz de Android.</p>
 </div>
 
 <h2>Qué datos trata la aplicación</h2>
 <table>
 <tr><th>Dato</th><th>Para qué</th><th>Dónde acaba</th></tr>
-<tr><td>Grabaciones de audio</td><td>Es la función principal de la app</td><td>Solo en tu dispositivo</td></tr>
-<tr><td>Ubicación (GPS)</td><td>Incluir la coordenada en el informe. <strong>Opcional</strong>: si la rechazas, la app funciona igual</td><td>Solo en tu dispositivo</td></tr>
-<tr><td>Fecha, hora y zona horaria</td><td>Sellar el informe</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Grabaciones de audio</td><td>Es la función principal de la app</td><td>En tu dispositivo</td></tr>
+<tr><td>Fotos y vídeos (versión Pro)</td><td>Adjuntarlos como prueba sellada</td><td>En tu dispositivo</td></tr>
+<tr><td>Ubicación (GPS)</td><td>Incluir la coordenada en el acta. <strong>Opcional</strong>: si la rechazas, la app funciona igual</td><td>En tu dispositivo</td></tr>
+<tr><td>Fecha, hora y zona horaria</td><td>Sellar el acta</td><td>En tu dispositivo</td></tr>
+<tr><td>Huella SHA-256 de cada acta</td><td>Obtener un sello de tiempo independiente</td><td>FreeTSA o DigiCert, y los servidores públicos de OpenTimestamps</td></tr>
 <tr><td>Identificador de publicidad</td><td>Mostrar anuncios</td><td>Google AdMob, solo con tu consentimiento</td></tr>
 </table>
+
+<h2>Sello de tiempo</h2>
+<p>Al terminar cada grabación, la app calcula la huella SHA-256 del acta (una cadena de 32
+bytes) y la envía a una autoridad de sellado de tiempo (<strong>FreeTSA</strong>, o
+<strong>DigiCert</strong> como reserva) y a los servidores públicos de
+<strong>OpenTimestamps</strong>. Con esa huella no se puede reconstruir ni el audio ni ningún
+otro dato: solo sirve para demostrar después que el acta ya existía en ese momento. Como en
+cualquier conexión a internet, esos servicios reciben tu dirección IP.</p>
+<p>La app también pide a Google Play un token de <strong>Play Integrity</strong>, que indica si
+el teléfono y la app son auténticos. El token se guarda en el acta, dentro del teléfono.</p>
+
+<h2>Transcripción de voz</h2>
+<p>Hay dos formas de transcribir, y puedes no usar ninguna:</p>
+<ul>
+<li><strong>Después de grabar, con Whisper o Vosk</strong>: la transcripción se hace <strong>dentro
+del teléfono, sin internet</strong>. La primera vez la app descarga el modelo de voz
+(de huggingface.co para Whisper o de alphacephei.com para Vosk). Esa descarga no envía
+ningún dato tuyo, aparte de la dirección IP que recibe cualquier servidor.</li>
+<li><strong>En directo mientras grabas</strong>: <strong>desactivada salvo que la actives</strong>
+en los ajustes. Usa el reconocedor de voz del propio sistema Android, que según la
+configuración del teléfono y el fabricante puede procesar la voz en el dispositivo o
+enviarla a los servidores de Google. Ese tratamiento lo realiza Google, no esta
+aplicación, y se rige por la política de privacidad de Google enlazada más abajo.</li>
+</ul>
 
 <h2>Publicidad</h2>
 <p>La aplicación es gratuita y se financia con anuncios de <strong>Google AdMob</strong>. Antes de mostrar
@@ -61,29 +90,32 @@ no personalizados.</p>
 <p>El tratamiento que Google hace de esos datos se rige por su propia política:
 <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
-<h2>Transcripción de voz</h2>
-<p>La función de transcripción utiliza el <strong>reconocedor de voz del propio sistema Android</strong>.
-Según la configuración de tu teléfono y el fabricante, ese reconocedor puede procesar el audio
-en el dispositivo o enviarlo a los servidores de Google para convertirlo en texto. Ese
-tratamiento lo realiza Google, no esta aplicación, y está sujeto a la política de privacidad
-de Google enlazada arriba.</p>
-<p>Si prefieres que no ocurra, simplemente no uses el botón de transcripción: la grabación
-funciona sin él.</p>
+<h2>Versión Pro</h2>
+<p>La suscripción Pro quita los anuncios y añade funciones. El pago lo gestiona por completo
+<strong>Google Play</strong>: la app no ve ni guarda tus datos de pago, y no envía nada de
+la compra a ningún servidor propio.</p>
 
 <h2>Permisos que pide la aplicación</h2>
 <ul>
 <li><strong>Micrófono</strong> — imprescindible: sin él no hay grabación.</li>
-<li><strong>Ubicación precisa y aproximada</strong> — opcional, solo para el informe.</li>
+<li><strong>Cámara</strong> — solo para hacer fotos o vídeos como prueba (versión Pro).</li>
+<li><strong>Ubicación precisa y aproximada</strong> — opcional, solo para el acta.</li>
 <li><strong>Notificaciones</strong> — para el aviso permanente mientras se graba, que Android exige.</li>
 <li><strong>Servicio en primer plano (micrófono)</strong> — para que la grabación no se corte al apagar la pantalla.</li>
+<li><strong>Alarmas exactas e inicio del teléfono</strong> — para las grabaciones programadas (versión Pro).</li>
+<li><strong>Internet</strong> — para los sellos de tiempo, la publicidad y la descarga de los modelos de voz.</li>
 </ul>
 <p>Mientras se graba, Android muestra siempre su propio indicador de micrófono en la barra de
 estado, además de la notificación de la aplicación. Esta app no puede ocultar ninguno de los dos.</p>
 
-<h2>Conservación</h2>
-<p>Los archivos permanecen en tu dispositivo hasta que tú los borras. Al desinstalar la
-aplicación se eliminan los que estén en su carpeta interna; los que hayas guardado en
-Descargas o compartido con otras apps permanecen donde los pusiste.</p>
+<h2>Conservación y copias de seguridad</h2>
+<p>Los archivos permanecen en tu dispositivo hasta que tú los borras. Para que no pierdas tus
+grabaciones si desinstalas la app, cada grabación, foto o vídeo se copia también en
+<code>Descargas/GrabadoraConSello/Copias</code>, dentro de tu propio teléfono. Esas copias
+siguen ahí después de desinstalar y la app puede recuperarlas al volver a instalarla; si no
+las quieres, bórralas desde esa carpeta.</p>
+<p>La copia de seguridad automática de Android solo guarda tus preferencias de la app, nunca
+grabaciones ni actas.</p>
 
 <h2>Un aviso sobre grabar conversaciones</h2>
 <p>Las reglas sobre grabar una conversación cambian según el país. En España es legal grabar

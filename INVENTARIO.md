@@ -9,7 +9,7 @@
 | Actualizado por (sesión/rama) | sesión «Simulador de Android para testing» — `main` |
 | Tipo de app | **No es una app.** Web estática pública (GitHub Pages) con las políticas de privacidad de las apps de Liquid Sun, generadas por `gen.py` (una sola plantilla y una sola sección de derechos RGPD). Incluye `PUBLICIDAD.md`, un aviso permanente sobre cómo declarar anuncios. |
 | **% listo para publicar** | 60 % (completitud para su propósito) |
-| Justificación del % | Publicado y funcionando para 4 apps: Grabadora Forense (`com.forense.grabadora`, con AdMob y UMP), Cuentakilómetros (`app.nosceipsum.cuentakm`), Ping Silver, antes Sun Bell (`com.liquidsun.pingsilver`, con AdMob y alias `pingcoins.html`) y Sol (sin ID de paquete). `python3 gen.py` genera 5 páginas idénticas a las del repo. **Faltan políticas** de GymTonic (solo existe en una rama sin fusionar y no cuadra con la app real) e Ingles (destino Google Play). Probablemente también de Descorche (vinos), NumiScore (numiscode), ON Umbra (ON) y Reflejo Interno, que ya tienen logo en la rama `brand/`. No hay versión en inglés ni página de borrado de cuenta. |
+| Justificación del % | Publicado y funcionando para 4 apps: Grabadora con Sello de Tiempo (`com.liquidsun.grabadora`, con AdMob y UMP), Cuentakilómetros (`app.nosceipsum.cuentakm`), Ping Silver, antes Sun Bell (`com.liquidsun.pingsilver`, con AdMob y alias `pingcoins.html`) y Sol (sin ID de paquete). `python3 gen.py` genera 5 páginas idénticas a las del repo. **Faltan políticas** de GymTonic (solo existe en una rama sin fusionar y no cuadra con la app real) e Ingles (destino Google Play). Probablemente también de Descorche (vinos), NumiScore (numiscode), ON Umbra (ON) y Reflejo Interno, que ya tienen logo en la rama `brand/`. No hay versión en inglés ni página de borrado de cuenta. |
 | Destino previsto | Web pública: GitHub Pages, que en el plan gratuito exige repo público. Son las URL que se ponen en Play Console. |
 
 ## 1. Trabajo autónomo pendiente (lo que Claude puede hacer solo)
@@ -36,7 +36,7 @@
 - [ ] Abrir en el navegador las 5 páginas y el índice (incluida `pingcoins.html`) y comprobar que cargan.
 - [ ] Comprobar en Settings → Pages que GitHub Pages sigue activo sobre `main` (raíz).
 - [ ] En Play Console, comprobar que cada app apunta a su URL plana (`…/legal/<app>.html`), no a una con carpeta, que da 404.
-- [ ] Comprobar que el paquete de cada política (`com.forense.grabadora`, `app.nosceipsum.cuentakm`, `com.liquidsun.pingsilver`) coincide con el `applicationId` real del AAB.
+- [ ] Comprobar que el paquete de cada política (`com.liquidsun.grabadora` ✔ revisado 2026-10-11, `app.nosceipsum.cuentakm`, `com.liquidsun.pingsilver`) coincide con el `applicationId` real del AAB.
 - [ ] Comprobar que el formulario de Seguridad de los datos y la casilla «Contiene anuncios» de cada ficha dicen lo mismo que su política.
 
 ## 4. Cómo probar la app
@@ -66,3 +66,4 @@
 | 2026-09-22 | Análisis inicial y relleno del inventario | 60% |
 | 2026-10-08 | `cuentakm.html`: apartado «Informes de errores» (Firebase Crashlytics desde la 1.0.2) y Google Fonts/cdnjs solo hasta la 1.0.1. Cambio hecho en `gen.py` y regenerado | 60% |
 | 2026-10-10 | Sun Bell pasa a llamarse **Ping Silver** (`com.liquidsun.pingsilver`): nueva `pingsilver.html`; `sunbell.html` y `pingcoins.html` sirven el mismo texto como alias. Cambio en `gen.py` y regenerado | 60% |
+| 2026-10-11 | `grabadora.html` reescrita para la app actual: nombre y paquete nuevos (`com.liquidsun.grabadora`), sello de tiempo (solo SHA-256 a FreeTSA/DigiCert/OpenTimestamps), Play Integrity, transcripción Whisper/Vosk en el móvil y la de directo desactivada por defecto, Pro con Google Play, cámara, grabación programada y copias en Descargas. Cambio en `gen.py` y regenerado | 60% |
