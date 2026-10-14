@@ -364,6 +364,79 @@ desinstalas, que los elimina por completo. Antes de cambiar de móvil, haz una c
 seguridad desde Ajustes.</p>
 """),
 
+ dict(slug="musica", nombre="All in Música", pkg="com.liquidsun.musica",
+  fecha="14 de octubre de 2026",
+  claim="Reproductor para la música que ya tienes en el móvil: estadísticas, editor, carátulas y modo coche.",
+  cuerpo="""
+<h2>Resumen en tres frases</h2>
+<div class="box">
+<p>No hay cuenta de usuario ni servidor propio: <strong>tu música, tus estadísticas, tus listas
+y tus ajustes se quedan en el teléfono</strong>.</p>
+<p>Solo sale del teléfono el título y el artista de las canciones cuya carátula o ficha
+pides buscar, y los datos que necesitan los anuncios de la versión gratuita (con tu consentimiento).</p>
+<p>Con Premium no hay anuncios. La compra la gestiona Google Play; la app solo sabe si es válida.</p>
+</div>
+
+<h2>Qué datos trata la aplicación</h2>
+<table>
+<tr><th>Dato</th><th>Para qué</th><th>Dónde acaba</th></tr>
+<tr><td>La lista de tus canciones (con el permiso de música y audio)</td><td>Encontrarlas y reproducirlas</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Estadísticas de escucha, estrellas, listas, canciones fijadas o mandadas al fondo, recortes, carátulas elegidas y ajustes</td><td>Ordenar tu música y recordar tus preferencias</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Nombre y dirección Bluetooth del coche (opcional)</td><td>Activar el modo coche al conectarte a él</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Título y artista de las canciones que buscas o identificas (o el nombre del archivo si no tiene etiquetas) y tus artistas más escuchados en «Descubrir música»</td><td>Carátulas, fichas de artista y recomendaciones, solo cuando tú lo pides</td><td>MusicBrainz, ListenBrainz y Cover Art Archive (ver abajo)</td></tr>
+<tr><td>Identificador de publicidad, dirección IP, datos del dispositivo e interacción con los anuncios</td><td>Mostrar anuncios en la versión gratuita</td><td>Google AdMob, con tu consentimiento en Europa</td></tr>
+</table>
+
+<h2>Sensores y detección del coche</h2>
+<p>Los sensores de proximidad, luz y movimiento se usan en el momento para reconocer gestos y
+sacudidas; no se guardan ni se envían. Si activas «Al detectar que voy en coche», el servicio
+de reconocimiento de actividad de Google Play services avisa a la app cuando empiezas o
+terminas un trayecto; la app no guarda ese historial. Los anuncios por voz del modo coche
+usan la voz del propio teléfono, sin enviar nada.</p>
+
+<h2>Servicios de terceros que la aplicación consulta</h2>
+<p>Cuando la aplicación pide algo por internet, el servicio consultado recibe tu dirección IP,
+como en cualquier página web. Ninguna de estas consultas lleva un identificador tuyo:</p>
+<ul>
+<li><strong>MusicBrainz, ListenBrainz y Cover Art Archive</strong> (MetaBrainz Foundation) —
+fichas de canciones y artistas, carátulas y artistas parecidos.
+(<a href="https://metabrainz.org/privacy">política de MetaBrainz</a>)</li>
+<li><strong>Google AdMob</strong> (Google Ireland Ltd.) — anuncios de la versión gratuita.
+(<a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos</a>)</li>
+<li><strong>Google Play</strong> — la compra de Premium y la ventana de valoración.</li>
+</ul>
+
+<h2>Anuncios y consentimiento</h2>
+<p>La versión gratuita muestra anuncios de Google AdMob. La primera vez que abres la app en el
+Espacio Económico Europeo, el Reino Unido o Suiza aparece la ventana de consentimiento de Google,
+donde eliges si aceptas anuncios personalizados. Puedes cambiarlo cuando quieras en
+<em>Ajustes → Privacidad de los anuncios</em>, y restablecer o eliminar el identificador de
+publicidad en los ajustes de Android.</p>
+<p>Base legal: el funcionamiento de la app y las búsquedas que pides, por ejecución del servicio
+que solicitas; los anuncios personalizados, por tu consentimiento, que puedes retirar en cualquier
+momento; los anuncios no personalizados y la prevención del fraude, por el interés legítimo de
+mantener la app gratuita.</p>
+
+<h2>Permisos de Android</h2>
+<ul>
+<li><strong>Música y audio</strong>: encontrar y reproducir tus canciones.</li>
+<li><strong>Notificaciones</strong>: controles de la música y avisos del modo coche.</li>
+<li><strong>Mostrar sobre otras apps</strong> (opcional): botones flotantes del modo coche.</li>
+<li><strong>Dispositivos cercanos / Bluetooth</strong> (opcional): reconocer el Bluetooth del coche.</li>
+<li><strong>Actividad física</strong> (opcional): detectar que vas en coche.</li>
+<li><strong>Internet</strong>: las búsquedas que pides y los anuncios.</li>
+</ul>
+
+<h2>Copia de seguridad</h2>
+<p>La copia es un archivo que creas tú y guardas donde elijas. La app no la envía a ninguna parte
+por su cuenta.</p>
+
+<h2>Conservación</h2>
+<p>Los datos permanecen en tu dispositivo hasta que borras los datos de la aplicación o la
+desinstalas, que los elimina por completo. Lo que reciben Google o MetaBrainz se rige por sus
+propias políticas.</p>
+"""),
+
  dict(slug="sol", nombre="Sol · ventana de paseo", pkg="",
   claim="A qué hora salir a caminar o en bici: horas solares, meteorología y rutas.",
   cuerpo="""

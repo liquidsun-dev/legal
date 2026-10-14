@@ -16,6 +16,7 @@ ahí que estas páginas vivan separadas del código.
 | Cuentakilómetros | https://silversun-dev.github.io/legal/cuentakm.html |
 | Ping Silver (antes Sun Bell) | https://silversun-dev.github.io/legal/pingsilver.html |
 | All in Inglés | https://silversun-dev.github.io/legal/all-in-ingles.html |
+| All in Música | https://silversun-dev.github.io/legal/musica.html |
 | Sol · ventana de paseo | https://silversun-dev.github.io/legal/sol.html |
 
 Las páginas son **planas** (`pingsilver.html`), no carpetas: estas se suben desde el
