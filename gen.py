@@ -437,41 +437,64 @@ desinstalas, que los elimina por completo. Lo que reciben Google o MetaBrainz se
 propias políticas.</p>
 """),
 
- dict(slug="sol", nombre="Sol · ventana de paseo", pkg="",
-  claim="A qué hora salir a caminar o en bici: horas solares, meteorología y rutas.",
+ dict(slug="sol", nombre="Solea", pkg="com.liquidsun.solea",
+  fecha="15 de octubre de 2026",
+  claim="A qué hora salir a caminar, correr o en bici: horas solares, meteorología y rutas.",
   cuerpo="""
 <h2>Resumen en tres frases</h2>
 <div class="box">
-<p>No hay cuenta de usuario ni servidor propio. <strong>Tus ubicaciones guardadas y tu historial
-se quedan en el almacenamiento local de tu navegador o dispositivo.</strong></p>
-<p>La aplicación <strong>puede mostrar publicidad</strong> de Google AdMob. Si lo hace, el
-SDK accede al identificador de publicidad del dispositivo, y dentro de la Unión Europea se te
-pregunta antes. No hay analítica de ningún otro tipo.</p>
+<p>No hay cuenta de usuario ni servidor propio. <strong>Tus ubicaciones guardadas, tus rutas y
+tu historial de paseos se quedan en tu dispositivo.</strong></p>
+<p>La aplicación de Android <strong>se financia con publicidad</strong> de Google AdMob, y dentro
+de la Unión Europea se te pregunta antes. No hay analítica de ningún otro tipo.</p>
 </div>
 
 <h2>Qué datos trata la aplicación</h2>
 <table>
 <tr><th>Dato</th><th>Para qué</th><th>Dónde acaba</th></tr>
 <tr><td>Ubicación (GPS o escrita por ti)</td><td>Calcular las horas solares y el tiempo de tu zona</td><td>Solo en tu dispositivo</td></tr>
-<tr><td>Últimas ubicaciones y ajustes</td><td>No tener que volver a escribirlos</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Paseos grabados con GPS, rutas y ajustes</td><td>Tu historial y no tener que volver a escribirlos</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Identificador de publicidad</td><td>Mostrar anuncios</td><td>Google AdMob, solo con tu consentimiento</td></tr>
+<tr><td>Interacción con la aplicación</td><td>Medir los anuncios servidos</td><td>Google AdMob, solo con tu consentimiento</td></tr>
 </table>
 <p>Puedes usar la aplicación sin dar acceso al GPS: basta con escribir el nombre de una
 ciudad o pegar unas coordenadas.</p>
+
+<h2>Publicidad</h2>
+<p>La aplicación de Android es gratuita y se paga con anuncios de <strong>Google AdMob</strong>.
+Para servirlos y medirlos, el SDK de AdMob accede al <strong>identificador de publicidad</strong>
+del dispositivo y a datos de uso de la aplicación.</p>
+<p>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la primera vez que abres
+la aplicación se te pregunta si aceptas los anuncios personalizados. Puedes cambiar esa
+decisión cuando quieras en <em>Configuración &rsaquo; Privacidad de los anuncios</em>.</p>
+<p>Puedes reiniciar o eliminar tu identificador de publicidad desde los ajustes de Android, en
+<em>Google &rsaquo; Anuncios</em>. Más información en la
+<a href="https://policies.google.com/technologies/ads">página de Google sobre publicidad</a>.</p>
+<p>La versión web no muestra anuncios.</p>
 
 <h2>Servicios de terceros que la aplicación consulta</h2>
 <p>Para dar el tiempo y los mapas hay que pedir datos por internet. El servicio consultado
 recibe tu dirección IP y las coordenadas de la zona que estás mirando:</p>
 <ul>
-<li><strong>Open-Meteo</strong> — predicción meteorológica, calidad del aire, elevación y búsqueda de
-ciudades. (<a href="https://open-meteo.com/en/terms">condiciones de Open-Meteo</a>)</li>
+<li><strong>MET Norway</strong> (Instituto Meteorológico de Noruega) — predicción meteorológica.
+(<a href="https://api.met.no/doc/TermsOfService">condiciones de MET Norway</a>)</li>
+<li><strong>Photon</strong> (komoot), con datos de OpenStreetMap — búsqueda de lugares por nombre.
+(<a href="https://www.komoot.com/privacy">política de komoot</a>)</li>
 <li><strong>OpenStreetMap</strong> — las imágenes del mapa y el cálculo de rutas a pie y en bici.
 (<a href="https://osmfoundation.org/wiki/Privacy_Policy">política de OSM</a>)</li>
 </ul>
 <p>Ninguno de esos servicios recibe un identificador tuyo: no hay cuenta que asociar.</p>
 
+<h2>Permisos de Android</h2>
+<ul>
+<li><strong>Ubicación</strong> — opcional, para usar tu posición y grabar paseos.</li>
+<li><strong>Internet</strong> — para el tiempo, el mapa, las rutas y la publicidad.</li>
+</ul>
+
 <h2>Conservación</h2>
-<p>Todo lo guardado vive en el almacenamiento local de tu navegador o de la aplicación
-instalada. Borrar los datos del sitio, o desinstalarla, lo elimina por completo.</p>
+<p>Todo lo guardado vive en el almacenamiento de la aplicación o de tu navegador. Borrar los
+datos, o desinstalarla, lo elimina por completo. Lo que recibe Google AdMob se rige por su
+propia política.</p>
 """),
 ]
 
