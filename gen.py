@@ -496,6 +496,68 @@ recibe tu dirección IP y las coordenadas de la zona que estás mirando:</p>
 datos, o desinstalarla, lo elimina por completo. Lo que recibe Google AdMob se rige por su
 propia política.</p>
 """),
+ dict(slug="planta", nombre="PLANTA", pkg="liquidsun.planta",
+  fecha="16 de octubre de 2026",
+  claim="Entrenador de automatización industrial: simulador ladder, retos, repaso y guías de TIA Portal.",
+  cuerpo="""
+<h2>Resumen</h2>
+<div class="box">
+<p>No hay cuenta de usuario ni servidor propio. <strong>Tus programas, tus retos superados y
+tu progreso de repaso se quedan en tu dispositivo.</strong></p>
+<p>La aplicación de Android <strong>se financia con un anuncio</strong> de Google AdMob en la
+parte de abajo, y dentro de la Unión Europea se te pregunta antes. No hay analítica de
+ningún otro tipo.</p>
+</div>
+
+<h2>Qué datos trata la aplicación</h2>
+<table>
+<tr><th>Dato</th><th>Para qué</th><th>Dónde acaba</th></tr>
+<tr><td>Programas ladder, retos, misiones, repaso y ajustes</td><td>Guardar tu progreso</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>El nombre con el que quieres que te llame la app</td><td>Saludarte</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Identificador de publicidad</td><td>Mostrar anuncios</td><td>Google AdMob, según tu elección de consentimiento</td></tr>
+<tr><td>Interacción con la aplicación</td><td>Medir los anuncios servidos</td><td>Google AdMob, según tu elección de consentimiento</td></tr>
+</table>
+<p>La aplicación no pide ningún permiso de Android aparte de Internet: ni ubicación, ni
+cámara, ni micrófono, ni contactos.</p>
+
+<h2>Publicidad</h2>
+<p>La aplicación de Android es gratuita y se paga con un banner de <strong>Google AdMob</strong>
+en la parte inferior de la pantalla. No hay anuncios a pantalla completa. Para servirlos y
+medirlos, el SDK de AdMob accede al <strong>identificador de publicidad</strong> del dispositivo
+y a datos de uso de la aplicación.</p>
+<p>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, antes de pedir ningún
+anuncio la aplicación te muestra el formulario oficial de Google (User Messaging Platform)
+para que decidas si aceptas los anuncios personalizados. Puedes cambiar esa decisión cuando
+quieras en <em>Ajustes &rsaquo; Opciones de privacidad de anuncios</em>.</p>
+<p>Puedes reiniciar o eliminar tu identificador de publicidad desde los ajustes de Android, en
+<em>Google &rsaquo; Anuncios</em>. El tratamiento que hace Google se rige por su propia política:
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a> y
+<a href="https://policies.google.com/technologies/ads">página de Google sobre publicidad</a>.</p>
+<p>Tu progreso en la aplicación no se usa para la publicidad ni se envía a Google.</p>
+
+<h2>Enlaces a otras webs</h2>
+<p>Las guías incluyen enlaces a documentación externa (por ejemplo, manuales de Siemens). Solo
+se abren si tú los pulsas, en tu navegador, y esas webs tienen sus propias políticas.</p>
+
+<h2>Copia de seguridad</h2>
+<p>Desde <em>Ajustes &rsaquo; Copia de seguridad</em> puedes generar un archivo con todo tu
+progreso. La aplicación lo entrega al menú <em>Compartir</em> de Android y eres tú quien
+decide dónde guardarlo (Drive, Descargas, correo…). La aplicación no lo envía a ninguna parte
+por su cuenta.</p>
+<p>Si tienes activada la copia de seguridad automática de Android, el sistema puede incluir
+los datos de la aplicación en la copia de tu cuenta de Google. Esa copia la gestiona Google
+y se puede desactivar en los ajustes de Android.</p>
+
+<h2>Permisos de Android</h2>
+<ul>
+<li><strong>Internet</strong> — solo para la publicidad.</li>
+</ul>
+
+<h2>Conservación</h2>
+<p>Todo lo guardado vive en el almacenamiento de la aplicación. Borrar sus datos desde los
+ajustes de Android, o desinstalarla, lo elimina por completo. Lo que recibe Google AdMob se
+rige por su propia política.</p>
+"""),
 ]
 
 PAG = """<!doctype html>

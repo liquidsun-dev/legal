@@ -18,6 +18,7 @@ ahí que estas páginas vivan separadas del código.
 | All in Inglés | https://silversun-dev.github.io/legal/all-in-ingles.html |
 | All in Música | https://silversun-dev.github.io/legal/musica.html |
 | Sol · ventana de paseo | https://silversun-dev.github.io/legal/sol.html |
+| PLANTA (`liquidsun.planta`) | https://silversun-dev.github.io/legal/planta.html |
 
 Las páginas son **planas** (`pingsilver.html`), no carpetas: estas se suben desde el
 navegador y subir una carpeta la aplasta. El README listaba antes URL con carpeta

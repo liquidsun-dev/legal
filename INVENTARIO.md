@@ -5,8 +5,8 @@
 
 | Campo | Valor |
 |---|---|
-| Última actualización | 2026-10-10 |
-| Actualizado por (sesión/rama) | sesión «Simulador de Android para testing» — `main` |
+| Última actualización | 2026-10-16 |
+| Actualizado por (sesión/rama) | sesión «PLANTA para Android» (desde Robotica) — `main` |
 | Tipo de app | **No es una app.** Web estática pública (GitHub Pages) con las políticas de privacidad de las apps de Liquid Sun, generadas por `gen.py` (una sola plantilla y una sola sección de derechos RGPD). Incluye `PUBLICIDAD.md`, un aviso permanente sobre cómo declarar anuncios. |
 | **% listo para publicar** | 60 % (completitud para su propósito) |
 | Justificación del % | Publicado y funcionando para 4 apps: Grabadora con Sello de Tiempo (`com.liquidsun.grabadora`, con AdMob y UMP), Cuentakilómetros (`app.nosceipsum.cuentakm`), Ping Silver, antes Sun Bell (`com.liquidsun.pingsilver`, con AdMob y alias `pingcoins.html`) y Sol (sin ID de paquete). `python3 gen.py` genera 5 páginas idénticas a las del repo. **Faltan políticas** de GymTonic (solo existe en una rama sin fusionar y no cuadra con la app real) e Ingles (destino Google Play). Probablemente también de Descorche (vinos), NumiScore (numiscode), ON Umbra (ON) y Reflejo Interno, que ya tienen logo en la rama `brand/`. No hay versión en inglés ni página de borrado de cuenta. |
@@ -40,7 +40,7 @@
 - [ ] Comprobar que el formulario de Seguridad de los datos y la casilla «Contiene anuncios» de cada ficha dicen lo mismo que su política.
 
 ## 4. Cómo probar la app
-- Enlace / acceso directo: https://silversun-dev.github.io/legal/ (índice). Páginas: `grabadora.html`, `cuentakm.html`, `pingsilver.html` (y sus alias `sunbell.html` y `pingcoins.html`), `sol.html`. No se ha podido comprobar desde aquí.
+- Enlace / acceso directo: https://silversun-dev.github.io/legal/ (índice). Páginas: `grabadora.html`, `cuentakm.html`, `pingsilver.html` (y sus alias `sunbell.html` y `pingcoins.html`), `sol.html`, `planta.html`. No se ha podido comprobar desde aquí.
 - Instrucciones: en local, `python3 gen.py` regenera las páginas; luego `python3 -m http.server` y abrir `http://localhost:8000/`.
 
 ## 5. Peligros, problemas y avisos
@@ -67,3 +67,4 @@
 | 2026-10-08 | `cuentakm.html`: apartado «Informes de errores» (Firebase Crashlytics desde la 1.0.2) y Google Fonts/cdnjs solo hasta la 1.0.1. Cambio hecho en `gen.py` y regenerado | 60% |
 | 2026-10-10 | Sun Bell pasa a llamarse **Ping Silver** (`com.liquidsun.pingsilver`): nueva `pingsilver.html`; `sunbell.html` y `pingcoins.html` sirven el mismo texto como alias. Cambio en `gen.py` y regenerado | 60% |
 | 2026-10-11 | `grabadora.html` reescrita para la app actual: nombre y paquete nuevos (`com.liquidsun.grabadora`), sello de tiempo (solo SHA-256 a FreeTSA/DigiCert/OpenTimestamps), Play Integrity, transcripción Whisper/Vosk en el móvil y la de directo desactivada por defecto, Pro con Google Play, cámara, grabación programada y copias en Descargas. Cambio en `gen.py` y regenerado | 60% |
+| 2026-10-16 | Política de **PLANTA** (`planta.html`, `liquidsun.planta`): datos solo en el móvil, un banner de AdMob con consentimiento UMP, copia de seguridad por Compartir, sin más permisos que Internet | 60% |
