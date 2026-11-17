@@ -5,7 +5,7 @@
 
 | Campo | Valor |
 |---|---|
-| Última actualización | 2026-10-16 |
+| Última actualización | 2026-11-17 |
 | Actualizado por (sesión/rama) | sesión «PLANTA para Android» (desde Robotica) — `main` |
 | Tipo de app | **No es una app.** Web estática pública (GitHub Pages) con las políticas de privacidad de las apps de Liquid Sun, generadas por `gen.py` (una sola plantilla y una sola sección de derechos RGPD). Incluye `PUBLICIDAD.md`, un aviso permanente sobre cómo declarar anuncios. |
 | **% listo para publicar** | 60 % (completitud para su propósito) |
@@ -68,3 +68,4 @@
 | 2026-10-10 | Sun Bell pasa a llamarse **Ping Silver** (`com.liquidsun.pingsilver`): nueva `pingsilver.html`; `sunbell.html` y `pingcoins.html` sirven el mismo texto como alias. Cambio en `gen.py` y regenerado | 60% |
 | 2026-10-11 | `grabadora.html` reescrita para la app actual: nombre y paquete nuevos (`com.liquidsun.grabadora`), sello de tiempo (solo SHA-256 a FreeTSA/DigiCert/OpenTimestamps), Play Integrity, transcripción Whisper/Vosk en el móvil y la de directo desactivada por defecto, Pro con Google Play, cámara, grabación programada y copias en Descargas. Cambio en `gen.py` y regenerado | 60% |
 | 2026-10-16 | Política de **PLANTA** (`planta.html`, `liquidsun.planta`): datos solo en el móvil, un banner de AdMob con consentimiento UMP, copia de seguridad por Compartir, sin más permisos que Internet | 60% |
+| 2026-11-17 | Políticas de **Ayudas para mí**, **Precio de la luz** y **Oposiciones BOE** (apps con el servidor `api.liquidsun.es`): sin cuenta, identificador al azar + perfil/palabras en el servidor (UE), IP sin guardar, borrado desde la app y caducidad a 12 meses, AdMob con UMP, aviso de app no oficial. Generadas con `gen-servidor.py`; enlazadas en `index.html` | 60% |
