@@ -579,6 +579,12 @@ PAG = """<!doctype html>
 {derechos}
 {menores}
 {cambios}
+<h2>Aviso legal</h2>
+<p>En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la información y de
+comercio electrónico (LSSI-CE), se informa de que el titular de esta aplicación es
+<strong>Juan Antonio Hernández López</strong> (nombre comercial Liquid Sun), NIF
+<strong>23292835E</strong>, con domicilio en Paraje del Nacimiento 54, Fontanares (buzón 7),
+30811 Lorca (Murcia), España. Contacto: <a href="mailto:liquidsun.dev@gmail.com">liquidsun.dev@gmail.com</a>.</p>
 <footer><a href="./">Volver al índice</a></footer>
 </div>
 </body>
@@ -602,6 +608,7 @@ IDX = """<!doctype html>
 <ul>
 {items}
 </ul>
+<p>Titular: Juan Antonio Hernández López (Liquid Sun) · NIF 23292835E · Paraje del Nacimiento 54, Fontanares (buzón 7), 30811 Lorca (Murcia), España.</p>
 <footer>Este repositorio contiene únicamente textos legales. El código de las aplicaciones no es público.</footer>
 </div>
 </body>
