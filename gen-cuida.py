@@ -34,7 +34,7 @@ suscripción opcional (Premium) que se paga a través de Google Play. Tus datos 
 <tr><td>Familiares y contactos de emergencia (nombre, relación, teléfono), tareas y turnos</td><td>Repartir el cuidado y llamar en una urgencia</td><td>Solo en tu dispositivo</td></tr>
 <tr><td>Fotos de documentos que tú eliges (DNI, informes…)</td><td>Tenerlos a mano</td><td>Solo en tu dispositivo (no viajan en el paquete familiar)</td></tr>
 <tr><td>Cómo te encuentras tú (pregunta semanal)</td><td>Recomendarte la guía del cuidador</td><td>Solo en tu dispositivo</td></tr>
-<tr><td>País de tu cuenta de Google Play (o, si no está disponible, el del idioma del teléfono)</td><td>Elegir el número de emergencias del botón de Urgencias y mostrar la información y las opciones propias de tu país</td><td>Solo en tu dispositivo</td></tr>
+<tr><td>Tu país: el que eliges al empezar o en Ajustes (la aplicación lo propone a partir del país de tu cuenta de Google Play o del idioma del teléfono)</td><td>Elegir el número de emergencias del botón de Urgencias y mostrar la información y las opciones propias de tu país</td><td>Solo en tu dispositivo</td></tr>
 <tr><td>Estado de tu compra de Premium</td><td>Quitar los anuncios y activar las funciones Premium</td><td>Google Play (que gestiona el pago) y tu dispositivo</td></tr>
 <tr><td>Identificador de publicidad, datos técnicos del dispositivo e interacción con los anuncios</td><td>Mostrar y medir los anuncios</td><td>Google AdMob, según tu elección de consentimiento</td></tr>
 </table>
