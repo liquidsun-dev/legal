@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Genera cuida.html (Cuida, sin servidor: todo en el móvil) y la añade a index.html
 # sin ejecutar gen.py entero (que no conoce las páginas de gen-servidor.py ni minutero.html).
+# ⚠️ La versión en inglés (cuida-en.html) se mantiene a mano: si cambias este texto, cámbiala también.
 import os, re
 os.chdir(r"C:\dev\legal")
 src = open("gen.py", encoding="utf-8").read()
@@ -12,6 +13,7 @@ MARCA, TITULAR, EMAIL, CSS, DERECHOS, MENORES, CAMBIOS, PAG = (g[k] for k in "MA
 APP = dict(slug="cuida", nombre="Cuida", pkg="com.liquidsun.cuida", fecha="23 de noviembre de 2026",
  claim="Organiza en familia el cuidado de tus padres: medicación, citas, tareas, turnos, mediciones y urgencias.",
  cuerpo="""
+<p class="sub"><a href="./cuida-en.html">English version</a></p>
 <h2>Resumen</h2>
 <div class="box">
 <p><strong>Todo lo que anotas en Cuida se guarda solo en tu teléfono.</strong> No hay cuenta de
@@ -111,6 +113,9 @@ pagina = PAG.format(css=CSS, marca=MARCA, nombre=APP["nombre"], pkgtxt=' — <co
                     derechos=DERECHOS.format(email=EMAIL), menores=MENORES, cambios=CAMBIOS)
 open(APP["slug"] + ".html", "w", encoding="utf-8").write(pagina)
 idx = open("index.html", encoding="utf-8").read()
+if './cuida-en.html' not in idx:
+    idx = idx.replace('<li><a href="./cuida.html">Cuida</a>', '<li><a href="./cuida.html">Cuida</a> (<a href="./cuida-en.html">English</a>)', 1)
+    open("index.html", "w", encoding="utf-8").write(idx)
 if './cuida.html' not in idx:
     idx = idx.replace("\n</ul>", '\n<li><a href="./cuida.html">%s</a> — %s</li>\n</ul>' % (APP["nombre"], APP["claim"]), 1)
     open("index.html", "w", encoding="utf-8").write(idx)
