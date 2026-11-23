@@ -5,7 +5,7 @@
 
 | Campo | Valor |
 |---|---|
-| Última actualización | 2026-11-17 |
+| Última actualización | 2026-11-23 |
 | Actualizado por (sesión/rama) | sesión «PLANTA para Android» (desde Robotica) — `main` |
 | Tipo de app | **No es una app.** Web estática pública (GitHub Pages) con las políticas de privacidad de las apps de Liquid Sun, generadas por `gen.py` (una sola plantilla y una sola sección de derechos RGPD). Incluye `PUBLICIDAD.md`, un aviso permanente sobre cómo declarar anuncios. |
 | **% listo para publicar** | 60 % (completitud para su propósito) |
@@ -70,3 +70,4 @@
 | 2026-10-16 | Política de **PLANTA** (`planta.html`, `liquidsun.planta`): datos solo en el móvil, un banner de AdMob con consentimiento UMP, copia de seguridad por Compartir, sin más permisos que Internet | 60% |
 | 2026-11-17 | Políticas de **Ayudas para mí**, **Precio de la luz** y **Oposiciones BOE** (apps con el servidor `api.liquidsun.es`): sin cuenta, identificador al azar + perfil/palabras en el servidor (UE), IP sin guardar, borrado desde la app y caducidad a 12 meses, AdMob con UMP, aviso de app no oficial. Generadas con `gen-servidor.py`; enlazadas en `index.html` | 60% |
 | 2026-11-17 | **Aviso legal (LSSI-CE)** en todas las políticas y en el índice: titular, NIF y domicilio (dirección verificada en Google Payments; NIF dado por el usuario). En `gen.py` (plantilla, también la usa `gen-servidor.py`) y a mano en `minutero.html` y `sol-en.html` | 60% |
+| 2026-11-23 | Política de **Cuida** (`cuida.html`, `com.liquidsun.cuida`): sin servidor, datos de salud solo en el móvil, compartir solo con el menú Compartir, AdMob (banner, pantalla completa, apertura y recompensa) con UMP, Premium por Play Billing, avisos locales, no es producto sanitario. Generada con `gen-cuida.py`, enlazada en `index.html` y publicada | 60% |
